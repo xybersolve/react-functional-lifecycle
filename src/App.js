@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ErrorBoundry from './components/ErrorBoundry';
+import './components/LifecycleClass';
+import LifecycleClass from './components/LifecycleClass';
+import LifecycleFunc from './components/LifecycleFunc';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ErrorBoundry>
+        <LifecycleClass text="a class act" color="blue"/>
+        <LifecycleFunc text="functions rule the day" color="violet" />
+      </ErrorBoundry>
     </div>
   );
 }
