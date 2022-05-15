@@ -1,4 +1,4 @@
-# React Lifecycle - Functional vs. Class 
+# React Lifecycle - Functional vs. Class Based
 
 A brief self documented extrapolation on React lifecycles for functional components in comparison with class based components.
 
